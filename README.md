@@ -19,68 +19,6 @@ picard-distributeurs/
 └── README.md               # Ce fichier
 ```
 
----
-
-## 🧩 Modélisation des données
-
-Le modèle choisi repose sur 4 collections principales :
-
-### 📦 `products`
-```json
-{
-  "_id": "PROD123",
-  "name": "Lasagnes saumon épinard",
-  "category": "Plats préparés",
-  "price": 4.99,
-  "stock_by_distributor": [
-    { "distributor_id": "DIST001", "quantity": 5 }
-  ]
-}
-```
-
-### 🏪 `distributors`
-```json
-{
-  "_id": "DIST001",
-  "location": {
-    "city": "Paris",
-    "address": "10 rue Picard, 75001"
-  },
-  "status": "actif",
-  "products_stocked": ["PROD123", "PROD456"]
-}
-```
-
-### 👤 `users`
-```json
-{
-  "_id": "USER001",
-  "name": "Claire Dupont",
-  "email": "claire@example.com",
-  "purchase_history": [
-    {
-      "product_id": "PROD123",
-      "distributor_id": "DIST001",
-      "quantity": 2,
-      "date": "2025-07-30T10:15:00Z"
-    }
-  ]
-}
-```
-
-### 💳 `transactions` *(optionnel)*
-```json
-{
-  "_id": "TX001",
-  "user_id": "USER001",
-  "product_id": "PROD123",
-  "distributor_id": "DIST001",
-  "quantity": 2,
-  "timestamp": "2025-07-30T10:15:00Z"
-}
-```
-
----
 
 ## 💡 Justification du choix NoSQL (MongoDB)
 
@@ -91,11 +29,10 @@ MongoDB, base de données orientée documents, a été choisie pour sa capacité
 - Être flexible et évolutive (ex : ajout futur de capteurs dans un distributeur).
 - Exécuter des requêtes rapides et performantes sur des données semi-structurées.
 
-Le modèle documentaire est **parfaitement adapté** à ce type d’application transactionnelle, contrairement à d’autres modèles NoSQL (clé-valeur, colonne, graphe).
 
 ---
 
-## ⚙️ Installation & utilisation
+##  Installation & utilisation
 
 ### 1. Cloner le projet et installer les dépendances
 
