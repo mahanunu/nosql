@@ -1,10 +1,10 @@
-# 🧊 Projet NoSQL - Gestion de Distributeurs Automatiques Picard
+# NoSQL - Gestion de Distributeurs Automatiques Picard
 
-Ce projet a pour objectif de concevoir une base de données NoSQL adaptée à la gestion des distributeurs automatiques de produits surgelés Picard. Il s'agit d'un système capable de gérer les stocks, les utilisateurs et l’historique des transactions en utilisant MongoDB.
+Ce projet a pour objectif de concevoir une base de données NoSQL pour la gestion de distributeurs automatiques de produits surgelés Picard. Il s'agit d'un système capable de gérer les stocks, les utilisateurs et l’historique des transactions en utilisant MongoDB.
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 picard-distributeurs/
@@ -20,7 +20,7 @@ picard-distributeurs/
 ```
 
 
-## 💡 Justification du choix NoSQL (MongoDB)
+## Justification du choix NoSQL (MongoDB)
 
 MongoDB, base de données orientée documents, a été choisie pour sa capacité à :
 
@@ -37,7 +37,7 @@ MongoDB, base de données orientée documents, a été choisie pour sa capacité
 ### 1. Cloner le projet et installer les dépendances
 
 ```bash
-git clone 
+git clone https://github.com/mahanunu/nosql.git
 cd picard-distributeurs
 npm install
 ```

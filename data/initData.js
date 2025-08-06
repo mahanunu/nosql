@@ -39,8 +39,8 @@ async function main() {
 
   await db.collection('users').insertOne({
     _id: 'USER001',
-    name: 'Claire Dupont',
-    email: 'claire@example.com',
+    name: 'Maha',
+    email: 'maha@example.com',
     purchase_history: []
   });
 
